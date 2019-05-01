@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  proxy:
+    ports:
+      - '8000:8000'
+    environment:
+      - PORT=8000
+    command: node app.js
+    build: './quo-proxy'
+    depends_on:
+      - editor
+  editor:
+    command: npm run start
+    build: './quo-core'
