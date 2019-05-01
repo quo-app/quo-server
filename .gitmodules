@@ -1,6 +1,7 @@
 [submodule "quo-core"]
 	path = quo-core
 	url = git@github.com:quo-app/quo-core.git
+	branch = develop
 [submodule "quo-proxy"]
 	path = quo-proxy
 	url = git@github.com:quo-app/quo-proxy.git
